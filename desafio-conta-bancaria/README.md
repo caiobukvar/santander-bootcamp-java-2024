@@ -4,7 +4,7 @@ www.dio.me
 
 #### Autores
 
-- [Gleyson Sampaio](https://github.com/glysns)
+- [Caio Bukvar](https://github.com/caiobukvar)
 
 ## Sintaxe - Desafio
 
