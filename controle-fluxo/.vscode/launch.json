@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ExampleException",
+      "request": "launch",
+      "mainClass": "exceptions.ExampleException",
+      "projectName": "controle-fluxo_e498e020"
+    },
+    {
+      "type": "java",
+      "name": "AboutMe",
+      "request": "launch",
+      "mainClass": "AboutMe",
+      "projectName": "controle-fluxo_e498e020"
+    },
+    {
+      "type": "java",
       "name": "ExampleBreakContinue",
       "request": "launch",
       "mainClass": "ExampleBreakContinue",
