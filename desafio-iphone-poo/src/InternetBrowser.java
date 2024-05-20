@@ -1,5 +1,5 @@
 public interface InternetBrowser {
-  void showPage();
+  void changeUrl();
   void newTab();
   void refreshPage();
 }

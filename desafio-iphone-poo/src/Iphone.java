@@ -68,7 +68,7 @@ public class Iphone implements MusicApp, PhoneApp, InternetBrowser {
     System.out.println("Calling voice mail.");
   }
   @Override
-  public void showPage() {
+  public void changeUrl() {
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter the desired page URL: ");
     String pageUrl = scanner.nextLine();

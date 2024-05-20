@@ -25,7 +25,7 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 2. **Aparelho Telefônico**
    - Métodos: `call(String numberToCall)`, `pickUp()`, `callVoiceMail()`
 3. **Navegador na Internet**
-   - Métodos: `showPage(String url)`, `newTab()`, `refreshPage()`
+   - Métodos: `changeUrl(String url)`, `newTab()`, `refreshPage()`
 
 ### Diagrama UML (Mermaid)
 
@@ -34,17 +34,17 @@ classDiagram
     class MusicApp {
         +play()
         +pause()
-        +selectMusic(String music)
+        +selectMusic()
     }
 
     class PhoneApp {
-        +call(String callNumber)
+        +call()
         +pickUp()
         +callVoiceMail()
     }
 
     class InternetBrowser {
-        +showPage(String url)
+        +changeUrl(String url)
         +newTab()
         +refreshPage()
     }
