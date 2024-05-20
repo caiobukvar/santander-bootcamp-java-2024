@@ -2,7 +2,7 @@
 
 ## Autores
 
-- [Gleyson Sampaio](https://github.com/glysns)
+- [Caio Bukvar](https://github.com/caiobukvar)
 
 ## POO - Desafio
 
@@ -21,50 +21,41 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 #### Funcionalidades a Modelar
 
 1. **Reprodutor Musical**
-   - Métodos: `tocar()`, `pausar()`, `selecionarMusica(String musica)`
+   - Métodos: `play()`, `pause()`, `selectMusic(String music)`
 2. **Aparelho Telefônico**
-   - Métodos: `ligar(String numero)`, `atender()`, `iniciarCorreioVoz()`
+   - Métodos: `call(String numberToCall)`, `pickUp()`, `callVoiceMail()`
 3. **Navegador na Internet**
-   - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
+   - Métodos: `showPage(String url)`, `newTab()`, `refreshPage()`
 
-### Objetivo
-
-1. Criar um diagrama UML que represente as funcionalidades descritas acima.
-2. Implementar as classes e interfaces correspondentes em Java (Opcional).
-
-### Exemplo de Diagrama UML (Mermaid)
+### Diagrama UML (Mermaid)
 
 ```mermaid
 classDiagram
-    class ReprodutorMusical {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+    class MusicApp {
+        +play()
+        +pause()
+        +selectMusic(String music)
     }
 
-    class AparelhoTelefonico {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+    class PhoneApp {
+        +call(String callNumber)
+        +pickUp()
+        +callVoiceMail()
     }
 
-    class NavegadorInternet {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+    class InternetBrowser {
+        +showPage(String url)
+        +newTab()
+        +refreshPage()
     }
 
     class iPhone {
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    iPhone --> MusicApp
+    iPhone --> PhoneApp
+    iPhone --> InternetBrowser
 ```
-
-### Instruções
-
-1. Assista ao vídeo do lançamento do iPhone para entender as funcionalidades principais.
-2. Utilize uma ferramenta UML de sua preferência para criar o diagrama das classes e interfaces. Você pode utilizar o modelo acima (criado na sintaxe [Mermaid](https://mermaid.js.org/)), uma alternativa open-source e compatível com arquivos Markdown como este.
-3. Opcionalmente, caso esteja cheio(a) de confiança, pode implementar as classes Java representadas em seu diagrama UML.
-4. Submeta seu repositório GitHub conforme as orientações da plataforma DIO. Por exemplo:
 
 ```bash
 https://github.com/glysns/trilha-java-basico/desafios/poo/README.md
