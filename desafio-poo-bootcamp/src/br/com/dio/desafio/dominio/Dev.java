@@ -22,11 +22,9 @@ public class Dev {
         //pegando o primeiro conteúdo, em ordem de adição dos mesmos.
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
 
-        if (conteudo.isPresent()){
-            //adicionando aos concluídos
+        if (conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
-            //removendo dos inscritos
-            this.conteudosInscritos.remove(conteudo.get());
+            this.conteudosInscritos.removeIf(c -> c.equals(conteudo.get()));
         } else {
             System.err.println("Você não está matriculado em nenhum conteúdo!");
         }
@@ -40,7 +38,7 @@ public class Dev {
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -48,7 +46,7 @@ public class Dev {
     }
 
     public Set<Conteudo> getConteudosInscritos() {
-        return conteudosInscritos;
+        return this.conteudosInscritos;
     }
 
     public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
