@@ -33,9 +33,6 @@ public class Iphone implements MusicApp, PhoneApp, InternetBrowser {
 
     // Example usage: refresh the current page
     myPhone.refreshPage();
-
-    // Example usage: open a new page
-    myPhone.showPage();
 }
   @Override
   public void play(){
